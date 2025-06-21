@@ -1,0 +1,120 @@
+body {
+  background: url("https://cdnb.artstation.com/p/assets/images/images/054/239/267/large/chill-jazz-coffee-thumbnai.jpg?1664091148")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  font-family: "Montserrat";
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: rgba(37, 37, 37, 0.5);
+    padding: 2rem 4.5rem;
+    width: 30%;
+
+    /* backdrop filter */
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    img.logo {
+      width: 30rem;
+    }
+    h1.title {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--contrast-co);
+      margin: 2rem 0;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 2.3rem;
+      .input {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--contrast-co);
+        border-radius: 0.5rem;
+
+        svg {
+          width: 10%;
+          padding: 0.5rem;
+        }
+
+        input {
+          width: 30vw !important;
+          all: unset;
+          padding: 1rem;
+          color: var(--primary-co);
+          font-size: 1.4rem;
+          &::placeholder {
+            color: var(--primary-co);
+          }
+        }
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        background-color: var(--primary-co);
+        border-radius: 0.5rem;
+        color: var(--contrast-co);
+        font-size: 1.6rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--primary-co);
+          background-color: var(--secondary-co);
+        }
+      }
+    }
+
+    .login-link {
+      margin-top: 2rem;
+      span.plain-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--contrast-co);
+      }
+      a {
+        text-decoration: none;
+        color: var(--contrast-co);
+        font-size: 1.6rem;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        &:hover {
+          color: var(--primary-co);
+          background-color: var(--contrast-co);
+        }
+      }
+    }
+  }
+}
